@@ -1,0 +1,46 @@
+
+ <!DOCTYPE HTML>  
+<html>  
+  
+<head> 
+    <title> 
+        How to convert JSON data to a
+        html table using JavaScript ?
+    </title>
+      
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+</head> 
+  
+<body style = "text-align:center;" id = "body">  
+      
+  
+  <!--     
+    <p id = "GFG_UP" style = 
+        "font-size: 15px; font-weight: bold;">
+    </p>
+      
+    <button onclick = "constructTable('#table')">
+        click here
+    </button> -->
+      
+    <br><br>
+      
+  
+      
+    <script>
+      
+       
+        fetch('./file.json').then(function(resp){
+            return resp.json();
+        }).then(
+            function(data){
+              
+                console.table(data)
+        })
+    </script>
+    <script src="index.js"></script>
+</body>  
+  
+</html>
