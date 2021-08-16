@@ -18,13 +18,16 @@
     });
   
     table.appendChild(tableBody);//row added in table body
-   
+   document.body.appendChild(table)
 
   } 
-
-    fetch("file.json").then(
+    
+     
+      fetch("file.json").then(
     responce=>responce.json()
   ).then(data=> createTable(data)
   
   )
- 
+   
+    
+  

@@ -4,12 +4,7 @@ tr td{
     font-size: 12px;
     font-weight: bolder;
 }
-
-#r{
-
-overflow: scroll;
-
-border:3px solid red;
-margin: 50px;
-
+body{
+    overflow-x:auto ;
 }
+
